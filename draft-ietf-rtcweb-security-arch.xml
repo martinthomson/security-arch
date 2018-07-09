@@ -34,6 +34,7 @@
 <!ENTITY I-D.ietf-rtcweb-security SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-rtcweb-security.xml">
 <!ENTITY I-D.ietf-rtcweb-rtp-usage SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-rtcweb-rtp-usage.xml">
 <!ENTITY I-D.ietf-mmusic-sdp-uks SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-mmusic-sdp-uks">
+<!ENTITY I-D.ietf-mmusic-mux-attributes SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-mmusic-sdp-mux-attributes">
 
 ]>
 
@@ -1329,6 +1330,12 @@ extension-att-value = 1*(%x01-09 / %x0b-0c / %x0e-3a / %x3c-ff)
               identity attribute.
             </t>
 
+            <t>
+              The <spanx style="verb">identity</spanx> attribute has a MUX
+              category of SPECIAL <xref
+              target="I-D.ietf-mmusic-sdp-mux-attributes"/>.
+            </t>
+
           </section>
         </section>
 
@@ -1963,7 +1970,7 @@ extension-att-value = 1*(%x01-09 / %x0b-0c / %x0e-3a / %x3c-ff)
         <t>
           Update discussion of IdP security model
         </t>
-        
+
         <t>
           Replace "domain name" with RFC 3986 Authority
         </t>
@@ -2121,6 +2128,7 @@ extension-att-value = 1*(%x01-09 / %x0b-0c / %x0e-3a / %x3c-ff)
       &I-D.ietf-rtcweb-security;
       &I-D.ietf-rtcweb-rtp-usage;
       &I-D.ietf-mmusic-sdp-uks;
+      &I-D.ietf-mmusic-sdp-mux-attributes;
 
       <reference anchor="webcrypto">
         <front>
